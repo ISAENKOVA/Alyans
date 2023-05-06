@@ -1,0 +1,59 @@
+section {
+
+    margin: 25px;
+    padding: 15px;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+
+}
+
+section::-webkit-scrollbar {
+    width: 5px;
+}
+
+section::-webkit-scrollbar-track {
+
+    background-color: aliceblue;
+    box-shadow: 0 0 15px 5px #48006c;
+    border-radius: 25px;
+}
+
+section::-webkit-scrollbar-thumb {
+    background-color: #48006c;
+    border-radius: 25px;
+}
+
+section .img_block {
+
+    flex-shrink: 0;
+    border: 3px double gold;
+    box-shadow: 0 0 15px 15px #48006c;
+    width: 500px;
+    margin: .5rem;
+    scroll-snap-align: start;
+
+
+}
+
+.img_block img {
+
+    width: 100%;
+    filter: sepia(90%);
+    transition: all .5s;
+
+}
+
+.img_block img:hover {
+
+    filter: sepia(0);
+}
+
+.title {
+
+    color: aliceblue;
+    font-size: 20px;
+    padding: 5px 15px;
+    text-align: center;
+
+}
